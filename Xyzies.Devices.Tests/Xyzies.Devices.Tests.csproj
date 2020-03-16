@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="xunit.runner.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="altcover" Version="5.3.675" />
+    <PackageReference Include="AutoFixture" Version="4.8.0" />
+    <PackageReference Include="FluentAssertions" Version="5.7.0" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.HealthChecks" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.HttpsPolicy" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR.StackExchangeRedis" Version="1.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="2.2.4" />
+    <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="2.2.0" />
+    <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="2.2.5" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.1.0" />
+    <PackageReference Include="Moq" Version="4.10.1" />
+    <PackageReference Include="xunit" Version="2.2.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xyzies.Devices.API\Xyzies.Devices.API.csproj" />
+    <ProjectReference Include="..\Xyzies.Devices.Data\Xyzies.Devices.Data.csproj" />
+    <ProjectReference Include="..\Xyzies.Devices.Services\Xyzies.Devices.Services.csproj" />
+  </ItemGroup>
+
+</Project>

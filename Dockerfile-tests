@@ -1,0 +1,11 @@
+FROM microsoft/dotnet:latest
+
+COPY ./app /app
+
+ENV DisputeEnvironment=test
+
+WORKDIR /app
+
+RUN ["dotnet", "test"]
+
+RUN echo "Successed"
