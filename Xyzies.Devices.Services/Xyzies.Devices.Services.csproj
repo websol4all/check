@@ -15,7 +15,7 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
-    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="StackExchange.Redis" Version="2.0.513" />
     <PackageReference Include="StackExchange.Redis.Extensions.Core" Version="4.0.5" />
     <PackageReference Include="System.Runtime.Caching" Version="4.5.0" />
